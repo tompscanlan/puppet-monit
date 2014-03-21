@@ -41,8 +41,8 @@ class monit inherits monit::params {
     hasrestart => true,
     hasstatus  => false,
     require    => [
-      File['monit'],
-      File['monitrc'],
+      #File['monit'],
+      #File['monitrc'],
       Package['monit']
     ],
   }
